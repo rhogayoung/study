@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>IT->미디어잇 만들기!!!</title>
+    <!--https://rho-project-rhogayoung.c9users.io/css/media_news.html-->
+    <style>
+        *{padding: 0; margin: 0;}
+        body{background: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);}
+        ul{list-style:none;}
+        strong,span{display:block;}
+        a{text-decoration:none;}
+        
+         .wrap{
+            width: 900px;
+            height: 540px;
+            border: 1px solid;
+            margin: 50px auto;
+            background-image:url('http://static.naver.net/newsstand/img/20121231/bg_panel.png')
+        }
+        
+        .wrap div.top{
+            border-bottom: 3px #545454 solid; 
+            margin: 30px 30px 6px 30px;
+        }
+        
+        .top .logo{float:left; margin-bottom:2px;}
+        .top .banner{float:right; margin:15px 0 10px 0;}
+        .top .button-list{clear:left; height: 22px; font-size:0;}
+        
+        .top .button-list button{
+            border:0 none; text-indent:-9999px; height: 22px; 
+            cursor:pointer;
+            font-size:0;
+            margin-left: 2px;
+            background-image: url('../html/images/sp_nwstd.png');
+        }
+        
+        .top .button-list button:first-child{margin-left: 0;}
+        .top .button-list button.btn1{width: 66px; background-position: -187px -200px;}
+        .top .button-list button.btn2{width: 106px; background-position: -293px -175px;}
+        .top .button-list button.btn3{width: 28px; background-position: -500px -270px;}
+        .top .button-list button,
+        .top .button-list span{font-size:12px; margin-left: 6px; display:inline;}
+        
+        .content{width: 840px; height: 380px; margin: 20px 30px 0 30px;}
+        .content .left{width: 547px; height: 372px; margin:4px 0;}
+        .content .left{float:left;}
+        .left .left-top{height: 160px;}
+        .left .left-bottom{background: #f8f8f8; height:179px; margin-top:18px; padding:13px 0 0 10px;}
+        
+        .left .left-top strong{font-size:20px; display:block; margin-bottom: 10px;}
+        .left .left-top a{color:black;}
+        .left .left-top img{border:1px #cccccc solid; width: 174px; height: 120px; line-height:180px;}
+        .left .left-top span{font-size: 12px; width: 358px; height: 70px; }
+        .left .left-top span{float:right; display:block; overflow:hidden;}
+        
+        .left .left-bottom li:first-child{width: 271px; height: 74px; margin-bottom: 7px;}
+        .left .left-bottom li:first-child+li{width: 271px; height: 74px;}
+        
+        .left .left-bottom li:first-child img,
+        .left .left-bottom li:first-child+li img{border:1px #cccccc solid; width: 72px; height: 72px; float:left;}
+        
+        .left .left-bottom li .point1{font-size: 12px; color:#d41416; margin-left: 85px;} 
+        .left .left-bottom li .sub1{font-size:11px; color:#7d7d7d; margin-left: 85px;}
+        .left .left-bottom li:first-child+li~li{width: 236px; height: 55px; margin-right: 10px; margin-bottom: 2px;}
+        
+        .left .left-bottom li:first-child,
+        .left .left-bottom li:first-child+li{float:left;}
+        .left .left-bottom li:first-child+li{clear:left;}
+        .left .left-bottom li:first-child+li~li{margin-left: 286px;}
+        .left .left-bottom li .point{font-size:12px; font-weight: bold; color:#565656;}
+        .left .left-bottom li span{font-size:11px; color:#565656;}
+        
+        
+        .content .right{border-left:1px #e3e3e3 solid; width: 275px; height: 373px; padding-left:8px; margin: 3.5px 0;}
+        .content .right{float:right;}
+        
+        .content .right h2{background: #000; width: 265px; height: 27px;
+font-size: 12px; color: #fff; padding-left:10px;
+                  line-height: 24px;
+        }
+        .content .right li:first-child{width: 260px; height: 80px; padding: 9px 10px 10px 5px;}
+        .content .right li:first-child img{width: 100px; height: 95px; float:left;}
+        .content .right li:first-child span{font-size:12px; color:black;}
+        
+        .right li.sub_bot{font-size:12px; line-height: 19px; font-weight: bold; 
+                          width: 255px; height: 20px; clear:both; margin-left: 5px;
+                          padding-left:10px; 
+        }
+
+        .right li.sub_bot{background: url('http://static.naver.net/newsstand/2015/1217/mediait/010213/006.gif')
+                        no-repeat 3px 10px;}
+                        
+        .right li.sub_bot a{color:#4d4d4d;}
+        
+        .right li.sub_bot1 img{border:1px #e3e3e3 solid; width: 270px; height: 122px; margin-left:5px;}
+        .right li.sub_bot1 .cover{font-size:12px; margin-top: -17px; margin-left:10px;}
+        .right li.sub_bot1 a{color:black;}
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <h1 class="logo"><a href=""><img src="../html/images/mlogo.gif" alt="미디어잇"/></a></h1>
+            <div class="banner">
+                  <a href="">
+                    <img src="../html/images/banner.jpg" alt="배너"/>
+                </a>
+            </div>
+            
+            <div class="button-list">
+                <button class="btn1">구독하기</button>
+                <button class="btn2">이용자한마디</button>
+                <button class="btn3">소셜보내기</button>
+                <span>12-16 00:18편집</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="left">
+                <div class="left-top">
+                    <a href="">
+                        <strong>하반기 초이스잇 위기를 기회로 만든 '혁신전략'을 엿보다</strong>
+                            <img src="http://static.naver.net/newsstand/2015/1216/mediait/115903/001.jpg" alt="초이스잇"/>
+                            <span>
+                            “혁신의 성패를 가르는 요인의 5%는 분석이고, 나머지 95%는 신속하면서도 집중적인 실행이다”라는 말이 있다. 
+                            실행력은 지난날 우리나라 경제의 눈부신 성장을 이끈 원동력이기도 했다. 그러나 이제 우리는 불확실성의 시대를 살아가고 있다. 
+                            경기 침체가 장기화...
+                            </span>
+                    </a>
+                </div>
+                <div class="left-bottom">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="http://static.naver.net/newsstand/2015/1216/mediait/102304/002.jpg" alt="LGU+"/>
+                                <strong class="point1">[단독] LGU+, 직원 인센티브 'LG V10' 지급</strong>
+                                <span class="sub1">[미디어잇 최재필] 권영수 신임 LG유플러스 부회장이 임직원 연말 인센티브로 계열사 제품을 지급키로 해 논란</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="http://static.naver.net/newsstand/2015/1216/mediait/102304/003.jpg" alt="LGU+"/>
+                                <strong class="point1">시트로엥·피아트, 한국 시장서 외면받는 이유는?</strong>
+                                <span class="sub1">[미디어잇 정치연] 2015년 수입차 시장은 유럽 디젤차의 강세와 브랜드별 공격적인 판촉활동의 영향으로 전년 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong class="point">'아이폰7' 1호 가입자, 이통사 고가 경품 못 받는다</strong>
+                                <span>[미디어잇 최재필] 2016년 출시가 예상되는…</span>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="">
+                                <strong class="point">올 플래시 스토리지, 미드레인지 신제품 출시 봇물</strong>
+                                <span>[미디어잇 김남규] 국내 올 플래시 스토리지…</span>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="">
+                                <strong class="point">화웨이, 한국시장 영토확장 나섰다</strong>
+                                <span>[미디어잇 최재필] 국내 이통사들에게 유... </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="right">
+                <h2>리뷰</h2>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="http://static.naver.net/newsstand/2015/1216/mediait/115903/004.jpg" alt="건강한 pc"/>
+                            <span>
+                                <strong>‘건강한 PC’ 위한 선택, 앱코 베테랑 USB 3.0</strong>
+                                [미디어잇 최용석] 연말로 접어들면서 게임을 즐기기 위해서나 선물용,
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li class="sub_bot">
+                        <a href="">눈·손이 즐거운 실속형 게이밍 키보드, 스카 </a>
+                    </li>
+                    
+                    <li class="sub_bot">
+                        <a href="">광학 83배, 어디까지 당겨질까? 니콘 쿨픽 </a>    
+                    </li>
+                    
+                    <li class="sub_bot">
+                        <a href="">스마트시대 필수품, 스카이디지탈 차량용 </a>
+                    </li>
+                    
+                    <li class="sub_bot">
+                        <a href="">'레인보우 LED' 기계식 게이밍 키보드,앱 </a>
+                    </li>
+                    
+                    <li class="sub_bot">
+                        <a href="">데스크톱 대체 노트북의 기준, 기가바이트 </a>   
+                    </li>
+                    
+                    <li class="sub_bot1">
+                        <a href="">
+                            <img src="http://static.naver.net/newsstand/2015/1216/mediait/102304/005.jpg"alt="한중 020 커머스 글로벌 컨퍼런스 2106"/>
+                            <span class="cover">
+                                <strong>한중 020 커머스 글로벌 컨퍼런스 2106 현장</strong>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            
+            
+        </div>
+        
+        
+        
+    </div>
+</body>
+</html>
