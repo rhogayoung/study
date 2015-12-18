@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>IT->미디어잇 만들기!!!</title>
-    <!--https://rho-project-rhogayoung.c9users.io/css/media_news.html-->
+       <!--https://study-rhogayoung.c9users.io/css/media_news.html-->
     <style>
         *{padding: 0; margin: 0;}
         body{background: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);}
@@ -14,7 +14,6 @@
          .wrap{
             width: 900px;
             height: 540px;
-            border: 1px solid;
             margin: 50px auto;
             background-image:url('http://static.naver.net/newsstand/img/20121231/bg_panel.png')
         }
@@ -24,8 +23,8 @@
             margin: 30px 30px 6px 30px;
         }
         
-        .top .logo{float:left; margin-bottom:2px;}
-        .top .banner{float:right; margin:15px 0 10px 0;}
+        .top .logo{float:left; margin-bottom:2px; padding:30px 0 0 0;}
+        .top .banner{float:right; margin:32px 0 8px 0;}
         .top .button-list{clear:left; height: 22px; font-size:0;}
         
         .top .button-list button{
@@ -77,8 +76,7 @@
         .content .right{float:right;}
         
         .content .right h2{background: #000; width: 265px; height: 27px;
-font-size: 12px; color: #fff; padding-left:10px;
-                  line-height: 24px;
+                            font-size: 12px; color: #fff; padding-left:10px; line-height: 24px;
         }
         .content .right li:first-child{width: 260px; height: 80px; padding: 9px 10px 10px 5px;}
         .content .right li:first-child img{width: 100px; height: 95px; float:left;}
@@ -94,19 +92,21 @@ font-size: 12px; color: #fff; padding-left:10px;
                         
         .right li.sub_bot a{color:#4d4d4d;}
         
-        .right li.sub_bot1 img{border:1px #e3e3e3 solid; width: 270px; height: 122px; margin-left:5px;}
-        .right li.sub_bot1 .cover{font-size:12px; margin-top: -17px; margin-left:10px;}
+        .right li.sub_bot1{width: 270px; height: 122px; position:relative; overflow:hidden;}
+        .right li.sub_bot1 img{border:1px solid; margin-left:5px; }
+        .right li.sub_bot1 span{width: 265px; height: 25px; position:absolute; background:black; font-size:14px; color:white; bottom:0; font-size:12px; margin-left: 5px;}
         .right li.sub_bot1 a{color:black;}
+        .right li.sub_bot1 strong{margin-left:10px;}
         
     </style>
 </head>
 <body>
     <div class="wrap">
         <div class="top">
-            <h1 class="logo"><a href=""><img src="../html/images/mlogo.gif" alt="미디어잇"/></a></h1>
+            <h1 class="logo"><a href=""><img src="http://static.naver.net/newsstand/up/2014/0206/nsd172114160.gif" alt="미디어잇"/></a></h1>
             <div class="banner">
                   <a href="">
-                    <img src="../html/images/banner.jpg" alt="배너"/>
+                    <img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_11450255438238.jpg" alt="배너"/>
                 </a>
             </div>
             
@@ -205,7 +205,7 @@ font-size: 12px; color: #fff; padding-left:10px;
                     <li class="sub_bot1">
                         <a href="">
                             <img src="http://static.naver.net/newsstand/2015/1216/mediait/102304/005.jpg"alt="한중 020 커머스 글로벌 컨퍼런스 2106"/>
-                            <span class="cover">
+                            <span>
                                 <strong>한중 020 커머스 글로벌 컨퍼런스 2106 현장</strong>
                             </span>
                         </a>
